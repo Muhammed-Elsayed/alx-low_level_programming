@@ -1,12 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/**main - should produce random number and print if its type
- * and returns zero
- */ 
-
+/**
+ * main - Entry point
+ *generate random num and print its type
+ * Return: Always 0 
+ */
 
 int main(void)
 {
