@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *generate random num and print its type
+ * generate random num and print its type
  * Return: Always 0 
  */
 
