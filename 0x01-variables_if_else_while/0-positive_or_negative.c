@@ -3,7 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/*main - should produce random number and print if its positive , negative or zero */
+
+
 int main(void)
 {
 	int n;
