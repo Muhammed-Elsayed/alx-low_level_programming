@@ -3,7 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/*main - should produce random number and print if its positive , negative or zero */
+/**main - should produce random number and print if its type
+ * and returns zero
+ */ 
 
 
 int main(void)
