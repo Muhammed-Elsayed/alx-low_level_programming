@@ -1,9 +1,16 @@
 #include "main.h"
 
+/**
+ *print_last_digti - print the last digit
+ *@number : the nubmer
+ *Return : value of the last digit
+ */
+
 
 int print_last_digit(int number)
-{	
+{
 	int a;
+
 	if (number < 0)
 		number = -number;
 
