@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *print_last_digti - print the last digit
- *@number : the nubmer
- *Return : value of the last digit
+ *print_last_digit - print the last digit
+ *@number: the nubmer
+ *Return: value of the last digit
  */
 
 
