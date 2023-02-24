@@ -30,4 +30,5 @@ void print_triangle(int size)
 		_putchar('\n');
 		}
 	}
+	_putchat('\n');
 }
