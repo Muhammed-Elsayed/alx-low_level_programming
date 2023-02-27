@@ -2,9 +2,9 @@
 
 
 /**
- *print_rev - a function that prints a string, in reverse .
- *@s: pointer to a string.
- *Return: void .
+ *_strlen - a function that returns the length of a string
+ *@s: pointer.
+ *Return: the length.
  */
 
 int _strlen(char *s)
@@ -20,6 +20,12 @@ int _strlen(char *s)
 	return (length);
 }
 
+/**
+ *print_rev - a function that prints a string, in reverse .
+ *@s: pointer to a string.
+ *Return: void .
+ */
+
 void print_rev(char *s)
 {
 	int length, i;
@@ -29,8 +35,8 @@ void print_rev(char *s)
 
 	for (i = 0; i <= length; i++)
 	{
-		_putchar(*s);
 		s--;
+		_putchar(*s);
 	}
 	_putchar('\n');
 }
