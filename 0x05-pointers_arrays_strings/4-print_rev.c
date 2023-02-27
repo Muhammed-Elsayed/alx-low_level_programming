@@ -33,7 +33,7 @@ void print_rev(char *s)
 	length = _strlen(s);
 	s += length;
 
-	for (i = 1; i <= length; i++)
+	for (i = 0; i < length; i++)
 	{
 		s--;
 		_putchar(*s);
