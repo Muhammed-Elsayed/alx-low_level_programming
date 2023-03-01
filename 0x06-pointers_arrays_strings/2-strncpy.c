@@ -2,16 +2,15 @@
 
 
 /**
- *_strcat - function that concatenates two strings .
+ *_strncat - function that concatenates two strings .
  *@dest: ptr .
  *@src: ptr .
- *
+ *@n: int
  *Return: pointer to a string.
  */
 
 
-
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int len_dest = 0, len_src = 0, i;
 
@@ -21,14 +20,14 @@ char *_strcat(char *dest, char *src)
 	while (src[len_src] != '\0')
 		len_src++;
 
-	dest += len_dest;
+	
+	if (n > len_src)
+		n = len_src;
 
-	for (i = 0; i < len_src; i++)
-	{
+
+	for (i = 0; i < n; i++)
 		dest[i] = src[i];
-	}
+	
 
-	dest[i] = '\0';
-	dest -= len_dest;
 	return (dest);
 }
