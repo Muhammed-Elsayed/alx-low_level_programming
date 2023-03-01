@@ -21,7 +21,8 @@ char *_strncat(char *dest, char *src, int n)
 		len_src++;
 
 	dest += len_dest;
-
+	
+	//condition to avoid buffer overflow
 	if (n > len_src)
 		n = len_src;
 
