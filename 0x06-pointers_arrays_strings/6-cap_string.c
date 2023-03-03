@@ -13,11 +13,10 @@ char *cap_string(char *output1)
 
 	while (output1[len] != '\0')
 	{
-		len++;
 
 		if (output1[0] >= 97 && output1[0] <= 122)
 		{
-			output1[len] -= 32;
+			output1[0] -= 32;
 
 		}
 
@@ -38,6 +37,7 @@ char *cap_string(char *output1)
 			}
 
 		}
+	len++;
 	}
 	return (output1);
 }
