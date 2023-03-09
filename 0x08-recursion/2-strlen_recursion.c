@@ -2,25 +2,17 @@
 
 
 /**
- *
- *
- *
+ *_strlen_recursion - getting the length of a string .
+ *@s: ptr to a string .
+ *Return: int (the length of the str) .
  */
 
 
 int _strlen_recursion(char *s)
 {
-	int counting = 0;
+	if (!*s)
+		return (0);
 
-	if (*s == '\0')
-	{
-		return ;
-	}
 	else
-	{
-		counting++;
-		_strlen_recursion(s + 1);
-	}
-
-	return (counting);
+		return (1 + _strlen_recursion(++s));
 }
