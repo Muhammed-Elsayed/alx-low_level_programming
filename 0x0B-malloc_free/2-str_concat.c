@@ -16,21 +16,21 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0;
 	int len = 0;
 	int m, n;
-	
+
 	if (s1 != NULL)
 	{
 		for (; s1[i] != '\0'; i++)
 		{
 		}
 	}
-	
+
 	if (s2 != NULL)
 	{
 		for (; s2[j] != '\0'; j++)
 		{
 		}
 	}
-	
+
 	len += (i + j);
 
 	ptr = (char *) malloc(sizeof(char) * (len + 1));
