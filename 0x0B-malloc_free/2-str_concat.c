@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <stdlib.h>
 
 
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	len += (i + j);
 
 
-	ptr = (char *) malloc(sizeof(char *) * (len));
+	ptr = (char *) malloc(sizeof(char *) * (len - 1));
 
 	if (ptr == NULL)
 		return (NULL);
