@@ -3,13 +3,14 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
+
 void close_file(int fd);
 
 /**
- * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
+ * create_buffer - Allocates 
+ * @file: The name of the file
  *
- * Return: A pointer to the newly-allocated buffer.
+ * Return: A pointer.
  */
 char *create_buffer(char *file)
 {
