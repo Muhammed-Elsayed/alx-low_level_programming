@@ -1,4 +1,5 @@
 #include "main.h"
+
 #include <stdlib.h>
 
 /**
@@ -8,34 +9,40 @@
  *
  * Return: If the function fails or filename is NULL.
  */
+
+
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
+	ssize_t j, r, w;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
-	
-	
-	
-	
-	
+
+
+
+
+
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
+
+	j = open(filename, O_RDONLY);
+	r = read(j, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	if (j == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);
 	}
 
+
 	free(buffer);
-	close(o);
+	close(j);
+
 
 	return (w);
 }
