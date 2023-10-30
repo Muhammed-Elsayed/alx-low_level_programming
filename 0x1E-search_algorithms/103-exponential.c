@@ -2,9 +2,9 @@
 
 /**
   * _binary_search - Searches for a value in a sorted array
-  * @array: A pointer to the first 
+  * @array: A pointer to the first
   * @left: The starting index
-  * @right: The ending index 
+  * @right: The ending index
   * @value: The value to search for.
   *
   * Return: NULL, -1.
